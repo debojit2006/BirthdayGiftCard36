@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>A Special Surprise for Bahnishikha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600&family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PROJECT 1, SCENE 1: CATCH THE BUTTON GAME -->
+    <div id="catch-button-game" class="container">
+        <h1>A little game to start...</h1>
+        <p>Just tap the button!</p>
+        <button id="catch-button">Tap Me!</button>
+    </div>
+
+    <!-- PROJECT 1, SCENE 2: LETTER MODAL -->
+    <div id="letter-modal" class="container hidden">
+        <div id="letter-content">
+            <h2>A Letter for You, Bahnishikha</h2>
+            <p>My Dearest Bahnishikha,</p>
+            <p>If I had to explain what you mean to me, I’d be lost for words. It’s not something that can be captured in simple sentences, but I’ll try my best. You came into my life like a quiet sunrise, slowly and then all at once, filling everything with a light I didn’t even know was missing.</p>
+            <p>Every conversation with you, every shared laugh, every quiet moment—it all feels like a piece of a beautiful puzzle I never want to finish. You have a way of making the ordinary feel extraordinary. You have a kindness that doesn’t just show in your actions, but shines from your very soul.</p>
+            <p>Thank you for being you. Thank you for your patience, your strength, and the incredible warmth you bring into the world just by being in it. You are more wonderful than you could ever know.</p>
+            <p>With all my heart,<br>Debojit</p>
+            <button id="close-letter">Continue the surprise...</button>
+        </div>
+    </div>
+
+    <!-- PROJECT 1, SCENE 3: CONSTELLATION PUZZLE -->
+    <div id="constellation-game" class="container hidden">
+        <h1>Unlock the Constellation</h1>
+        <p>Connect the four brightest stars in the right order to reveal a message.</p>
+        <canvas id="drawing-canvas"></canvas>
+        <canvas id="constellation-bg-canvas"></canvas>
+        <div id="constellation-message"></div>
+        <button id="next-from-constellation" class="nav-button hidden">What's next?</button>
+    </div>
+
+    <!-- PROJECT 1, SCENE 4: WISHING JAR -->
+    <div id="wishing-jar-scene" class="container hidden">
+        <h1>A Wishing Jar for Your Year</h1>
+        <p>Type a private wish for the year ahead and watch it get saved.</p>
+        <input type="text" id="wish-input" placeholder="Type your wish here...">
+        <button id="submit-wish">Make a Wish</button>
+        <div id="jar-container">
+            <svg id="jar-svg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,300 C10,300 10,250 10,250 L10,100 C10,50 40,20 50,20 L150,20 C160,20 190,50 190,100 L190,250 C190,250 190,300 150,300 Z" fill="rgba(255, 255, 255, 0.3)" stroke="#fff" stroke-width="3"/>
+                <rect x="40" y="0" width="120" height="20" rx="5" fill="rgba(255, 255, 255, 0.5)" stroke="#fff" stroke-width="3"/>
+            </svg>
+        </div>
+         <button id="next-from-wish" class="nav-button hidden">I've made my wish...</button>
+    </div>
+
+    <!-- PROJECT 1, SCENE 5: PAINT OUR SKY -->
+    <div id="paint-sky-scene" class="container hidden">
+        <canvas id="sky-canvas"></canvas>
+        <div id="paint-sky-instruction">Use your finger to paint our sky.</div>
+        <div id="paint-sky-message" class="hidden">This is what you do to my world. You fill it with light.</div>
+        <button id="finish-painting" class="nav-button hidden">Finish</button>
+    </div>
+
+    <!-- NAVIGATION SCREEN -->
+    <div id="project-navigation" class="container hidden">
+        <h1>The journey isn't over...</h1>
+        <p>What would you like to do next?</p>
+        <button id="show-game-btn" class="nav-button">Play a Game 🕹️</button>
+        <button id="show-garden-btn" class="nav-button">Visit a Garden 🌸</button>
+    </div>
+
+    <!-- PROJECT 2: BOUNCING BALL GAME -->
+    <div id="ball-game-container" class="container hidden">
+        <h1>Keepie-Uppy!</h1>
+        <p>Use your finger or mouse to control the paddle. Don't let the ball drop!</p>
+        <canvas id="game-canvas" width="320" height="480"></canvas>
+        <button id="back-to-nav-from-game" class="nav-button">Back to Choices</button>
+    </div>
+
+    <!-- PROJECT 3: GARDEN OF COMPLIMENTS -->
+    <div id="garden-container" class="container hidden">
+        <h1>A Garden of Compliments</h1>
+        <p>Just for you. Tap on a flower to see it bloom...</p>
+        <div class="garden">
+            <div class="flower"><div class="flower-bud"></div><div class="compliment">You always light up the room without even trying. It’s kind of your superpower.</div></div>
+            <div class="flower"><div class="flower-bud"></div><div class="compliment">You’re honestly the kind of person people search for in this chaotic world—rare, real, and refreshing.</div></div>
+            <div class="flower"><div class="flower-bud"></div><div class="compliment">I hope you know how strong you are. You handle life with this silent grace most people don’t even notice.</div></div>
+            <div class="flower"><div class="flower-bud"></div><div class="compliment">You make even the most boring moments feel like memories worth keeping.</div></div>
+            <div class="flower"><div class="flower-bud"></div><div class="compliment">If the world had more people like you, it would be a much kinder, happier place.</div></div>
+        </div>
+        <button id="back-to-nav-from-garden" class="nav-button">Back to Choices</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
